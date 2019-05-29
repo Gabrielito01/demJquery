@@ -1,0 +1,405 @@
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Shop Homepage - Start Bootstrap Template</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+
+	<!-- Custom styles for this template -->
+	<style type="text/css">
+		body {
+			padding-top: 56px;
+		}
+
+		@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,900);
+
+		*:focus {
+			outline: 0;
+		}
+
+
+		.dim:hover {
+			margin-top: 5px;
+			opacity: 0.8;
+			filter: alpha(opacity=80);
+			/* For IE8 and earlier */
+		}
+
+
+		#container {
+			margin: auto;
+			width: 800px;
+
+			margin-bottom: 50px;
+			overflow: auto;
+		}
+
+		#demo {
+			width: 300px;
+			font-family: 'Lato', calibri, arial;
+			font-size: 14px;
+			font-weight: 300;
+			padding: 10px;
+			text-align: left;
+			background: none;
+			overflow: auto;
+			float: left;
+			margin-left: 40px;
+			color:black;
+		}
+
+		#demo p {
+			font-family: 'Lato', calibri, arial;
+			font-size: 16px;
+			font-weight: 300;
+			text-align: left;
+			color:black;
+		}
+
+		#demo h1 {
+			font-family: 'Lato', calibri, arial;
+			font-size: 20px;
+			font-weight: 100;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		#demo img {
+			display: block;
+			float: left;
+			margin-right: 10px;
+			border: 0px solid #888;
+			-moz-transition: all 0.1s ease-in-out;
+			-webkit-transition: all 0.1s ease-in-out;
+			-o-transition: all 0.1s ease-in-out;
+			-ms-transition: all 0.1s ease-in-out;
+			transition: all 0.1s ease-in-out;
+		}
+		/* Below is the design for the contact form */
+
+		#contact-wrap {
+			font-family: 'Lato', calibri, arial;
+			font-size: 16px;
+			font-weight: 300;
+			width: 402px;
+			color:black;
+			overflow: auto;
+			float: left;
+		}
+
+		#contact-area {
+			margin-left: 3px;
+			width: 342px;
+
+			padding: 20px;
+		}
+
+		#contact-area input,
+		#contact-area textarea {
+			padding: 5px;
+			width: 342px;
+			font-family: 'Lato', calibri, arial;
+			font-size: 14px;
+			font-weight: 300;
+			color: black;
+			background-color: transparent;
+			border-top: 1px solid transparent;
+			border-left: 1px solid transparent;
+			border-bottom: 1px solid black;
+			border-right: 1px solid transparent;
+
+			margin-bottom: 15px;
+		}
+
+		#contact-area textarea {
+			height: 150px;
+			background-color: transparent;
+			border-top: 1px solid transparent;
+			border-left: 1px solid transparent;
+			border-bottom: 1px solid black;
+			border-right: 1px solid transparent;
+		}
+		#contact-area textarea:focus,
+		#contact-area input:focus {
+			background-color: orange;
+			border-top: 1px solid transparent;
+			border-left: 1px solid transparent;
+			border-bottom: 1px solid black;
+			border-right: 1px solid transparent;
+			text-decoration: white;
+		}
+
+		#contact-area input.submit-button {
+			font-family: 'Lato', calibri, arial;
+			font-size: 12px;
+			font-weight: 300;
+			text-transform: uppercase;
+			width: 100px;
+			float: left;
+			background-color: transparent;
+			border-top: 1px solid black;
+			border-left: 1px solid black;
+			border-bottom: 1px solid black;
+			border-right: 1px solid black;
+
+			-moz-transition: all 0.1s ease-in-out;
+			-webkit-transition: all 0.1s ease-in-out;
+			-o-transition: all 0.1s ease-in-out;
+			-ms-transition: all 0.1s ease-in-out;
+			transition: all 0.1s ease-in-out;
+		}
+
+		#contact-area input.submit-button:hover {
+
+			color: white;
+			background-color: #333;
+		}
+
+		label {
+			float: left;
+			text-align: left;
+			margin-right: 16px;
+			width: 100px;
+			padding-top: 5px;
+			font-family: 'Lato', calibri, arial;
+			font-size: 18px;
+			font-weight: 300;
+		}
+
+
+
+		::-webkit-input-placeholder {
+			color: black;
+
+			font-size: 14px;
+		}
+
+		:-moz-placeholder {
+			/* Firefox 18- */
+			color: black;
+
+			font-size: 14px;
+		}
+
+		::-moz-placeholder {
+			/* Firefox 19+ */
+			color: black;
+
+			font-size: 14px;
+		}
+
+		:-ms-input-placeholder {
+			color: #fff;
+
+			font-size: 14px;
+		}
+.box {
+  margin: 0 auto;
+  width: 40px;
+  height: 140px;
+  position: relative;
+}
+.gravity {
+  width: 40px;
+  height: 40px;
+  animation: bounce 1s cubic-bezier(0.68, 0.35, 0.29, 0.54) infinite;
+}
+.ball {
+  width: 40px;
+  height: 40px;
+  background-image: url('https://image.flaticon.com/icons/svg/33/33736.svg');
+  background-size: cover;
+  animation: roll .6s linear infinite;
+}
+
+@keyframes roll {
+  0% {}
+  100% { transform: rotate(360deg) }
+}
+@keyframes bounce {
+  0% {}
+  50% { transform: translateY(100px) }
+  100% {}
+}
+@keyframes shadowScale {
+  0% {}
+  50% { transform: scaleX(1); opacity: .8;}
+  100% {}
+}
+		#foooter{
+			padding-top: 115px;
+			align-items:flex-end;
+		}
+		#backgr {
+      background: url('https://images.alphacoders.com/510/thumb-1920-510026.jpg');
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      opacity: 0.5;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+	   #sposta {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      width: 100%;
+      z-index: 9999999;
+    }
+	#wrap{
+		padding-top: 100px;
+		padding-bottom: 15px;
+	}
+	</style>
+
+</head>
+
+<body onload="myFunction()">
+	<div id="backgr">
+
+
+  </div>
+	 <div id="sposta">
+    <div id="box">
+      <div class="gravity">
+        <div class="ball"></div>
+      </div>
+    </div>
+  </div>
+	<div id="wrap">
+
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">Soccer Score</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				 aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Page Content -->
+		<div class="container">
+			<div class="row">
+				<div style="width: 700px;position: relative;">
+					<iframe width="700" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=+(MIlano)&amp;ie=UTF8&amp;t=&amp;z=11&amp;iwloc=B&amp;output=embed"
+					 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					<div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/pt/">googlemapsgen (pt)</a> & <a href="https://iamsterdamcard.it/">iamsterdamcard it</a></small></div>
+					<style>
+						#gmap_canvas img {
+							max-width: none!important;
+							background: none!important
+						}
+					</style>
+				</div><br />
+				<div class="col-lg-3">
+
+
+					<div id="contact-wrap">
+						<div id="contact-area">
+
+							<form method="post" action="contactengine.php">	
+								<input type="text" name="Name" id="Name" required placeholder="Full Name" />
+
+								<input type="text" name="Subject" id="Subject" required placeholder="Subject" />
+
+								<input type="text" name="Email" id="Email" required placeholder="Email" />
+
+								<input type="text" name="Phone" id="Phone" required placeholder="Phone" />
+
+								<textarea name="Message" rows="20" cols="20" id="Message" placeholder="Message"></textarea>
+								<input type="submit" name="submit" value="Submit" class="submit-button" />
+							
+							</form>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+			<!-- /.col-lg-3 -->
+
+			<div class="col-lg-9">
+
+
+
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.col-lg-9 -->
+
+	</div>
+	<!-- /.row -->
+
+	</div>
+	<!-- /.container -->
+
+	<!-- Footer -->
+	<div id="foooter">
+	<footer class="py-4 bg-dark">
+		<div class="container">
+			<p class="m-0 text-center text-white">Copyright © Gabrielito Website 2019</p>
+		</div>
+		<!-- /.container -->
+	</footer>
+	</div>
+	</div>
+	</div>
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	 crossorigin="anonymous"></script>
+
+	<script src="./index.js"></script>
+
+	<script>
+		var myVar;
+
+		function myFunction() {
+			document.getElementById("wrap").style.display = "none";
+			myVar = setTimeout(showPage, 1100);
+		}
+
+		function showPage() {
+			document.getElementById("box").style.display = "none";
+			document.getElementById("wrap").style.display = "block";
+			document.getElementById("sposta").style.display="none";
+
+		}
+	</script>
+</body>
+
+</html>
