@@ -45,7 +45,7 @@ $(document).ready(function () {
 
         var myItem = "";
         $.each(response, function (i, obj) {
-            myItem += ' <a href="#" class="list-group-item">'+obj.brand+'</a>';
+            myItem += ' <a href="category.html?id='+obj.brand+'" class="list-group-item">'+obj.brand+'</a>';
             
         //    console.log('valore',obj.id)
         });
