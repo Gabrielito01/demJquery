@@ -30,7 +30,7 @@ $(document).ready(function () {
             myItem += '</div>';
             myItem += '</div>';
         
-        brand+= '<a href="#" class="list-group-item active">'+val.brand+'</a>'
+        brand+= '<a href="#" class="list-group-item active">'+val.brand+'</a>';
         });
         $("#singleItem").append(myItem);
         $("#listGroup").append(brand);
