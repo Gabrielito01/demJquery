@@ -80,6 +80,10 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+     #foooter {
+      padding-top: 115px;
+      align-items: flex-end;
+    }
 
     </style>
   
@@ -186,12 +190,14 @@
     <!-- /.container -->
   
     <!-- Footer -->
+    <div id="foooter">
     <footer class="py-5 bg-dark fixed bottom">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright © Gabrielito Website 2019</p>
       </div>
       <!-- /.container -->
     </footer>
+    </div>
    </div>
   
     <!-- Bootstrap core JavaScript -->
