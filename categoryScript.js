@@ -81,9 +81,8 @@
             background-repeat: no-repeat;
         }
      #foooter {
-      padding-top: 115px;
-      align-items: flex-end;
-    }
+       position: fixed; bottom: 0px; height:150px; }
+    
 
     </style>
   
@@ -191,7 +190,7 @@
   
     <!-- Footer -->
     <div id="foooter">
-    <footer class="py-5 bg-dark fixed bottom">
+    <footer class="py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright © Gabrielito Website 2019</p>
       </div>
